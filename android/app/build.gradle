@@ -25,7 +25,7 @@ android {
     }
     signingConfigs {
         debug {
-            storeFile file("$projectDir/../fastlane/development")
+            storeFile file("$projectDir/../../fastlane/development")
             storePassword getKeystorePassword("$projectDir/../../fastlane/.env.development")
             keyAlias "development"
             keyPassword getKeystorePassword("$projectDir/../../fastlane/.env.development")
