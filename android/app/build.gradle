@@ -4,6 +4,13 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+def getKeystorePassword(envPath) {
+    Properties properties = new Properties()
+    def env = file("$envPath")
+    properties.load(env.newDataInputStream())
+    return properties.getProperty('KEYSTORE_PASSWORD')
+}
+
 android {
     compileSdkVersion 28
     defaultConfig {
@@ -13,6 +20,14 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    signingConfigs {
+        debug {
+            storeFile file("$projectDir/../fastlane/development")
+            storePassword getKeystorePassword("$projectDir/../../fastlane/.env.development")
+            keyAlias "development"
+            keyPassword getKeystorePassword("$projectDir/../../fastlane/.env.development")
+        }
     }
     buildTypes {
         debug {
