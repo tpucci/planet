@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "435738804845",
+    "firebase_url": "https://xyz-pucci-planet.firebaseio.com",
+    "project_id": "xyz-pucci-planet",
+    "storage_bucket": "xyz-pucci-planet.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:435738804845:android:5e8933076f998b376c3564",
+        "android_client_info": {
+          "package_name": "xyz.pucci.planet.development"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "435738804845-o0pb5uog13o0qe5ms0fvu0mr9j2nlb1v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "xyz.pucci.planet.development",
+            "certificate_hash": "2dfb996424df09e1269d2f3a942cc1bd4fb669f6"
+          }
+        },
+        {
+          "client_id": "435738804845-nl11pb96mvsf4fsob5f0ens8fq41o2gm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCA5SHBTlnmu3po7EebGglC-4CowUHGV9A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "435738804845-nl11pb96mvsf4fsob5f0ens8fq41o2gm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
